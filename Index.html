@@ -10,7 +10,7 @@
 </head>
 <body>
 
-    <header>
+    <header class="debug">
         <nav id="main-nav">
             <div id="logo">
                 LOGO
@@ -23,8 +23,8 @@
                 <li><a href="#">Sicurezza</a></li>
                 <li><a href="#">Assistenza</a></li>
             </ul>
-            <div class="button white">
-                <button class="buttonwhite">Accedi</button>
+            <div>
+                <button class="button-white button-small"><a href="#">Accedi</a></button>
             </div>
         </nav>
         <section>
@@ -34,9 +34,9 @@
             <p id="center-text">
                 Che tu faccia parte di un club scolastico, gruppo di gamer, comunità artistica mondiale, o semplicemente di un piccolo grouppo di amici che vuole passare il tempo assieme, Discord rende più facile chiacchierare ogni giorno e ritrovarsi più spesso.
             </p>
-            <div class="button">
-                <button><i class="fa-sharp fa-solid fa-arrow-down"></i> Scarica per MAc</button>
-                <button>Apri Discord nel tuo browser</button>
+            <div>
+                <button class="button-white button-big"><i class="fa-sharp fa-solid fa-arrow-down"></i><a href="#"> Scarica per Mac</a></button>
+                <button class="button-black button-long"><a href="#">Apri Discord nel tuo browser</a></button>
             </div>
 
         </section>
@@ -79,6 +79,11 @@
             </section>
             <!-- sezione prima immagine poi testo -->
             <section class="white-back">
+                <div class="container">
+                    <svg viewBox="0 0 500 500" preserveAspectRatio="xMinYMin meet">
+                        <path d="M0,100 C150,200 350,0 500,100 L500,00 L0,0 Z" style="stroke: none; fill:rgb(246,246,246);"></path>
+                      </svg>
+                </div> 
                 <div class="box-img">
                     <img src="img/Geometric_simple_shape_animal_vector_3-1_047003a80_600.jpg" alt="">
                 </div>
@@ -91,6 +96,11 @@
 
             <!-- sezione prima testo poi immagine -->
             <section class="upndown grey-back">
+                <div class="container">
+                    <svg viewBox="0 0 500 500" preserveAspectRatio="xMinYMin meet">
+                        <path d="M0,100 C150,200 350,0 500,100 L500,00 L0,0 Z" style="stroke: none; fill:white;"></path>
+                      </svg>
+                </div> 
                 <div class="box-text">
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis cupiditate atque voluptatum ducimus corrupti autem exercitationem ipsum quam! Ipsa consectetur voluptatem aperiam recusandae nulla suscipit quo cum aliquid sequi quaerat?
@@ -107,7 +117,7 @@
                     <img src="img/Geometric_simple_shape_animal_vector_3-1_047003a80_600.jpg" alt="">
                 </div>
                 <div>
-                    <button><i class="fa-sharp fa-solid fa-arrow-down"></i> Scarica per MAc</button>
+                    <button class="button-big button-blue"><a href="#"><i class="fa-sharp fa-solid fa-arrow-down"></i> Scarica per Mac</a></button>
                 </div>
             </section>
         </main>
@@ -185,7 +195,7 @@
            </div>
            <div id="footer-nav-bottom">
                 <img src="#" alt="LOGO">
-                <button>Registrati</button>
+                <button class="button-medium button-blue"><a href="#">Registrati</a></button>
            </div>
             
         </nav>

@@ -185,18 +185,25 @@ main p{
 }
 
 .upndown{
-    flex-direction: column;
     align-items: center;
+    
 }
 
 .upndown .box-img{
     padding: 0px 0px 50px 0px;
+    width: 60%;
 }
 .upndown .box-text{
     justify-content: center;
     width: 60%;
     text-align: center;
     padding-bottom: 50px;
+}
+.upndown.grey-back{
+    justify-content: center;
+    text-align: center;
+  
+
 }
 /* regole nav secondaria */
 
@@ -217,12 +224,28 @@ main section{
 
 footer{
     min-height: 350px;
-    background-color: brown;
+    background-color: rgb(35,39,42);
 
 }
 footer ul{
     list-style: none;
     align-items: baseline;
+}
+
+footer ul li:first-child{
+    color: rgb(88,101,242);
+}
+
+footer ul li{
+    line-height: 35px;
+    color: white;
+}
+footer ul a{
+    text-decoration: none;
+    color: white;
+}
+footer ul a:hover{
+    text-decoration: underline;
 }
 #footer-nav-top{
     display: flex;
@@ -239,6 +262,7 @@ footer ul{
     justify-content: space-between;
     width: 80%;
     margin: 20px 10%;
+    padding-bottom: 20px;
 }
 
  /* DEBUG  */
@@ -253,3 +277,12 @@ main{
     background-color: aqua;
     min-height: 300px;
 }
+
+/* immagini select language */
+select#nazione option[value="Italiano"]   { background-image:url(C:/Users/Menta/Menta Boolean/htmlcss-struttura-discord/htmlcss-struttura-discord/img/cbf50c2e3287d2118f741e827a3ddaf5.png);   }
+select#nazione option[value="Deutsch"]   { background-image:url(C:/Users/Menta/Menta Boolean/htmlcss-struttura-discord/htmlcss-struttura-discord/img/cbf50c2e3287d2118f741e827a3ddaf5.png);   }
+#nazione{
+}
+
+/* devo cercare di non usare flext-direction: column
+provo a modificarlo poi in class upndown */

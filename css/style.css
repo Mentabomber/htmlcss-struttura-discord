@@ -78,13 +78,15 @@ button a{
 button a:hover{
     color:rgb(64,78,237);
 }
+
+/* shadowing sul hovering work in progress */
 .button-black a:hover{
     color: rgba(255, 255, 255, 0.5);
-  text-shadow:0px 0px 1000px #fdec6e;
-  -moz-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
+    text-shadow:0px 0px 1000px #fdec6e;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
 }
 
 
@@ -125,6 +127,9 @@ section{
     justify-content: center;
     flex-wrap: wrap;
 }
+section.upndown.grey-back{
+    padding-bottom: 30px;
+}
 #center-text{
     text-align: center;
 
@@ -141,11 +146,21 @@ header section{
 }
 
 /* regole parte centrale */
+main h2{
+    font-size: 70px;
+}
+
+main p{
+    font-size: 30px;
+    line-height: 40px;
+    padding-top: 30px;
+}
+
 .flex-container{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin-bottom: 30px;
+    
 
 }
 .white-back{
@@ -158,6 +173,12 @@ header section{
 .box-img{
     max-height: 50%;
 }
+.white-back .box-img{
+    padding-right: 50px;
+}
+.grey-back .box-img{
+    padding-left: 50px;
+}
 
 .box-text{
     width: 30%;
@@ -168,6 +189,15 @@ header section{
     align-items: center;
 }
 
+.upndown .box-img{
+    padding: 0px 0px 50px 0px;
+}
+.upndown .box-text{
+    justify-content: center;
+    width: 60%;
+    text-align: center;
+    padding-bottom: 50px;
+}
 /* regole nav secondaria */
 
 .sidebar{
